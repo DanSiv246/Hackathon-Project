@@ -1,3 +1,8 @@
+import os
+from pathlib import Path
+
+os.environ.setdefault("DEEPFACE_HOME", str(Path(__file__).resolve().parent))
+
 import cv2
 from deepface import DeepFace
 
